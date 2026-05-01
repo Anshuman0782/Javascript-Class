@@ -6,9 +6,62 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>JavaScript Practice</h1>
+  <button onclick="sayHello()">Click Me</button>
   <script>
-    const a = 1;
-    console.log(a);
+    function sayHello() {
+      alert("Hello World!");
+    }
+    //var 
+    console.log(name);
+    var name = "Lipika";
+
+
+
+
+    //let
+    let num = 10;
+    console.log(num);
+    num = 20;
+    console.log(num);
+    
+
+    //const 
+    const pi = 3.14;
+    console.log(pi);
+    //pi = 3.14159; // This will cause an error because pi is a constant
+
+    //Typeof variable(Type Casting)
+    let age = true;
+    console.log(typeof age); // Output: boolean
+
+
+
+    console.log( 12 + 12 );
+
+
+
+    //For of loop
+    const fruits = ["apple", "banana", "cherry"];
+
+    for (const fruit of fruits) { 
+      console.log(fruit);
+      
+      //For each loop
+      fruits.forEach(function(fruit) {
+        console.log(fruit);
+      });
+
+      //For each with arrow function
+      fruits.forEach(fruit => 
+      console.log(fruit));  
+    }
+
+    //Function
+    function add(a, b) {
+      return a + b;
+    }
+    console.log(add(5, 10)); // Output: 15
 
   </script>
 </body>
